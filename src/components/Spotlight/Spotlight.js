@@ -6,8 +6,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-// const API_KEY = "bf386faeecf0bb3e12b35c5812865c8d";
-
 const { REACT_APP_API_KEY } = process.env;
 let API_KEY = REACT_APP_API_KEY;
 
