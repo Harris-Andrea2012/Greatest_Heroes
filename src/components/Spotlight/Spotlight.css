@@ -1,0 +1,81 @@
+.cs-hidden li {
+    list-style: none;
+    display: inline-block;
+}
+
+.spotlights {
+    margin-bottom: 1rem;
+}
+
+.hero-container {
+    width: 15rem;
+    height: 25rem;
+    margin-right: 2rem;
+    z-index: 10;
+}
+
+.heroCard {
+    width: 100%;
+    height: 100%;
+    transition: 1s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+.hero-container:hover .heroCard {
+    transform: rotateY(180deg);
+}
+
+.heroCard figure {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.front img {
+    object-fit: cover;
+    object-position: center center;
+    width: 15rem;
+    height: 25rem;
+}
+
+.heroCard .back {
+    transform: rotateY(180deg);
+    color: black;
+    background-color: white;
+    padding: 1rem;
+}
+
+.back h3 {
+    color: var(--red);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.back h3,
+p {
+    margin-bottom: 1rem;
+}
+
+.back p {
+    font-size: 14px;
+    line-height: 1.5rem;
+}
+
+.spotlight-link {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    font-family: 'Archivo Black', sans-serif;
+    padding: 8px;
+    background: var(--yellow);
+    cursor: pointer;
+    border: 3px solid var(--red);
+    transition: all .3s linear;
+    color: black;
+}
+
+.spotlight-link:hover {
+    background: var(--red);
+    border: 3px solid var(--yellow);
+}
